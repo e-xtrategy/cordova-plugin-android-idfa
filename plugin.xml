@@ -47,6 +47,8 @@
 <!-- android-specific elements -->
 <platform name="android">
 
+    <preference name="PLAY_SERVICES_VERSION" default="16.0.0"/>
+
     <source-file src="src/android/AndroidIDFA.java" target-dir="src/com/praves/cordova/idfa" />
     <source-file src="src/android/CoreException.java" target-dir="src/com/praves/cordova/idfa" />
     <source-file src="src/android/AdvertisingIdClient.java" target-dir="src/com/praves/cordova/idfa" />
@@ -57,7 +59,7 @@
         </feature>
     </config-file>
     
-    <framework src="com.google.android.gms:play-services-ads:+" />
+    <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_VERSION" />
 
 </platform> 
 
